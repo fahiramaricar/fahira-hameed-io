@@ -1,0 +1,81 @@
+/* Load Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Change the background color of the page body */
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Default text color */
+    font-family: 'Roboto', sans-serif; /* Custom font family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Add spacing (padding/margin) between sections */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Change the alignment of the content of the About section */
+#About {
+    text-align: center;
+}
+
+/* Change the font size, weight, and color of headings */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #283f57;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+/* Transform the style of your Name at the top of the page */
+header h1 {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 3em;
+    font-weight: 700;
+    color: #042653;
+    text-transform: uppercase;
+}
+
+/* Add a picture of yourself (optional) */
+#About img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/* Transform the "Experience" list items into styled blocks */
+#Experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Experience li {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Transform the style of the "Connect" links */
+#Connect a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#Connect a:hover {
+    text-decoration: underline;
+}
+
+#Connect a i {
+    margin-right: 8px;
+}
+
