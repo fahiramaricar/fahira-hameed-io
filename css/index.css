@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* Change the background color of the page body */
+/* Base Styles for Mobile (Default) */
 body {
     background-color: #f0f8ff; /* Light blue background */
     color: #333; /* Default text color */
@@ -11,18 +11,15 @@ body {
     padding: 0;
 }
 
-/* Add spacing (padding/margin) between sections */
 section {
     padding: 20px;
     margin: 20px 0;
 }
 
-/* Change the alignment of the content of the About section */
 #About {
     text-align: center;
 }
 
-/* Change the font size, weight, and color of headings */
 h1 {
     font-size: 2.5em;
     font-weight: bold;
@@ -35,7 +32,6 @@ h2 {
     color: #2980b9;
 }
 
-/* Transform the style of your Name at the top of the page */
 header h1 {
     font-family: 'Open Sans', sans-serif; 
     font-size: 3em;
@@ -44,7 +40,6 @@ header h1 {
     text-transform: uppercase;
 }
 
-/* Make header sticky */
 header {
     position: sticky;
     top: 0;
@@ -54,7 +49,6 @@ header {
     padding: 10px 0;
 }
 
-/* Navigation styling */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -77,14 +71,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Add a picture of yourself (optional) */
 #About img {
     max-width: 200px;
     border-radius: 50%;
     margin-top: 20px;
 }
 
-/* Experience Section */
 #Experience .experience-item {
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +98,6 @@ nav ul li a:hover {
     margin-top: 5px;
 }
 
-/* Transform the style of the "Connect" links */
 #Connect .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -131,4 +122,70 @@ nav ul li a:hover {
 
 #Connect a i {
     margin-right: 8px;
+}
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    /* Change font size and color for headers */
+    h1 {
+        font-size: 3em;
+        color: #2c3e50;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        color: #1abc9c;
+    }
+
+    /* Change padding and background color for sections */
+    section {
+        padding: 30px;
+        background-color: #e8f4f8;
+    }
+
+    /* Change padding and font size for nav links */
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 1.2em;
+    }
+
+    /* Experience section grid layout */
+    #Experience .experience-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        gap: 10px;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    /* Change font size and color for headers */
+    h1 {
+        font-size: 3.5em;
+        color: #34495e;
+    }
+
+    h2 {
+        font-size: 3em;
+        color: #16a085;
+    }
+
+    /* Change padding and background color for sections */
+    section {
+        padding: 40px;
+        background-color: #d1ecf1;
+    }
+
+    /* Change margin and font size for nav links */
+    nav ul li a {
+        margin: 0 25px;
+        font-size: 1.5em;
+    }
+
+    /* Connect section grid layout */
+    #Connect .social-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
