@@ -62,8 +62,10 @@
     </section>
 
     <section id="Skills">
-        <h2>Skills</h2>
-        <!-- Skills content will be added using JavaScript -->
+        <h2>Skills</h2>        
+        <ul>
+            <!-- Skill items will be added using JavaScript -->
+        </ul>
     </section>
 
     <section id="Projects">
@@ -79,5 +81,30 @@
             <li><a href="https://www.linkedin.com/in/fahira-hameed-55a6182b0/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
         </ul>
     </section>
+
+     <!-- New section: Leave a Message -->
+     <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="usersName">Name:</label>
+            <input type="text" name="usersName" required><br>
+            <label for="usersEmail">Email:</label>
+            <input type="email" name="usersEmail" required><br>
+            <label for="usersMessage">Message:</label>
+            <textarea name="usersMessage" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- New section: Messages -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul>
+            <!-- Messages will be added here using JavaScript -->
+        </ul>
+    </section>
+    <footer></footer>
+    <!-- Link to the JavaScript file -->
+    <script src="js/index.js"></script>
 </body>
 </html>
